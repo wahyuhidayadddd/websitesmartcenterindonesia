@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\WilayahController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +24,11 @@ Route::get('/loginguru', function () {
 Route::get('/loginsiswa', function () {
     return view('loginsiswa');
 });
-Route::get('/lesprivatpekanbaru', function () {
-    return view('lesprivatpekanbaru');
+Route::get('/cabang/riau', function () {
+    return view('cabang.lesprivatriau');
 });
+
+
+
+
+Route::get('/cabang/{provinsi?}/{kabupaten?}/{kecamatan?}/{kelurahan?}', [WilayahController::class, 'index']);

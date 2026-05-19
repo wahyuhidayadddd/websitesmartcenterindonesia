@@ -1315,351 +1315,492 @@ footer .f-desc{font-size:13px;line-height:1.8;margin-bottom:18px}
   </div>
 </section>
 
+{{-- resources/views/cabang.blade.php --}}
+
+@php
+
+$cabangIndonesia = [
+
+    /*
+    |--------------------------------------------------------------------------
+    | SUMATERA
+    |--------------------------------------------------------------------------
+    */
+
+    [
+        'region' => '🗺 Sumatera',
+
+        'items' => [
+
+            [
+                'nama' => 'Aceh',
+                'slug' => 'aceh',
+                'gambar' => 'https://images.unsplash.com/photo-1564596823821-79b335a76a82?w=600&q=80&auto=format&fit=crop',
+
+                'children' => [
+
+                    [
+                        'nama' => 'Banda Aceh',
+                        'slug' => 'banda-aceh',
+
+                        'children' => [
+
+                            [
+                                'nama' => 'Kuta Alam',
+                                'slug' => 'kuta-alam',
+
+                                'children' => [
+
+                                    [
+                                        'nama' => 'Lampriet',
+                                        'slug' => 'lampriet',
+                                    ],
+
+                                    [
+                                        'nama' => 'Peunayong',
+                                        'slug' => 'peunayong',
+                                    ],
+
+                                ]
+                            ]
+
+                        ]
+                    ]
+
+                ]
+            ],
+
+            [
+                'nama' => 'Sumatera Utara',
+                'slug' => 'sumatera-utara',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Sumatera Barat',
+                'slug' => 'sumatera-barat',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Riau',
+                'slug' => 'riau',
+                'gambar' => 'https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=600&q=80&auto=format&fit=crop',
+
+                'children' => [
+
+                    [
+                        'nama' => 'Pekanbaru',
+                        'slug' => 'pekanbaru',
+
+                        'children' => [
+
+                            [
+                                'nama' => 'Marpoyan Damai',
+                                'slug' => 'marpoyan-damai',
+
+                                'children' => [
+
+                                    [
+                                        'nama' => 'Tangkerang Barat',
+                                        'slug' => 'tangkerang-barat',
+                                    ],
+
+                                    [
+                                        'nama' => 'Sidomulyo Timur',
+                                        'slug' => 'sidomulyo-timur',
+                                    ],
+
+                                ]
+                            ],
+
+                            [
+                                'nama' => 'Tampan',
+                                'slug' => 'tampan',
+                            ],
+
+                        ]
+                    ],
+
+                    [
+                        'nama' => 'Dumai',
+                        'slug' => 'dumai',
+                    ],
+
+                    [
+                        'nama' => 'Kampar',
+                        'slug' => 'kampar',
+                    ],
+
+                ]
+            ],
+
+            [
+                'nama' => 'Jambi',
+                'slug' => 'jambi',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Bengkulu',
+                'slug' => 'bengkulu',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Sumatera Selatan',
+                'slug' => 'sumatera-selatan',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Lampung',
+                'slug' => 'lampung',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Kepulauan Bangka Belitung',
+                'slug' => 'bangka-belitung',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Kepulauan Riau',
+                'slug' => 'kepulauan-riau',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+        ]
+    ],
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | PULAU JAWA
+    |--------------------------------------------------------------------------
+    */
+
+    [
+        'region' => '🏙 Pulau Jawa',
+
+        'items' => [
+
+            [
+                'nama' => 'Banten',
+                'slug' => 'banten',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'DKI Jakarta',
+                'slug' => 'dki-jakarta',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Jawa Barat',
+                'slug' => 'jawa-barat',
+                'gambar' => 'https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Jawa Tengah',
+                'slug' => 'jawa-tengah',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'DI Yogyakarta',
+                'slug' => 'di-yogyakarta',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Jawa Timur',
+                'slug' => 'jawa-timur',
+                'gambar' => 'https://images.unsplash.com/photo-1556001934-b7f70a99c11c?w=600&q=80&auto=format&fit=crop',
+            ],
+
+        ]
+    ],
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | BALI & NUSA TENGGARA
+    |--------------------------------------------------------------------------
+    */
+
+    [
+        'region' => '🌺 Bali & Nusa Tenggara',
+
+        'items' => [
+
+            [
+                'nama' => 'Bali',
+                'slug' => 'bali',
+                'gambar' => 'https://images.unsplash.com/photo-1598257007024-8c61c7e2c72f?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Nusa Tenggara Barat',
+                'slug' => 'nusa-tenggara-barat',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Nusa Tenggara Timur',
+                'slug' => 'nusa-tenggara-timur',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+        ]
+    ],
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | KALIMANTAN
+    |--------------------------------------------------------------------------
+    */
+
+    [
+        'region' => '🌿 Kalimantan',
+
+        'items' => [
+
+            [
+                'nama' => 'Kalimantan Barat',
+                'slug' => 'kalimantan-barat',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Kalimantan Tengah',
+                'slug' => 'kalimantan-tengah',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Kalimantan Selatan',
+                'slug' => 'kalimantan-selatan',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Kalimantan Timur',
+                'slug' => 'kalimantan-timur',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Kalimantan Utara',
+                'slug' => 'kalimantan-utara',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+        ]
+    ],
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | SULAWESI
+    |--------------------------------------------------------------------------
+    */
+
+    [
+        'region' => '🌴 Sulawesi',
+
+        'items' => [
+
+            [
+                'nama' => 'Sulawesi Utara',
+                'slug' => 'sulawesi-utara',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Gorontalo',
+                'slug' => 'gorontalo',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Sulawesi Tengah',
+                'slug' => 'sulawesi-tengah',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Sulawesi Barat',
+                'slug' => 'sulawesi-barat',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Sulawesi Selatan',
+                'slug' => 'sulawesi-selatan',
+                'gambar' => 'https://images.unsplash.com/photo-1598257007024-8c61c7e2c72f?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Sulawesi Tenggara',
+                'slug' => 'sulawesi-tenggara',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+        ]
+    ],
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | PAPUA & MALUKU
+    |--------------------------------------------------------------------------
+    */
+
+    [
+        'region' => '🏝 Papua & Maluku',
+
+        'items' => [
+
+            [
+                'nama' => 'Maluku',
+                'slug' => 'maluku',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Maluku Utara',
+                'slug' => 'maluku-utara',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Papua',
+                'slug' => 'papua',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Papua Barat',
+                'slug' => 'papua-barat',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Papua Barat Daya',
+                'slug' => 'papua-barat-daya',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Papua Tengah',
+                'slug' => 'papua-tengah',
+                'gambar' => 'https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Papua Pegunungan',
+                'slug' => 'papua-pegunungan',
+                'gambar' => 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop',
+            ],
+
+            [
+                'nama' => 'Papua Selatan',
+                'slug' => 'papua-selatan',
+                'gambar' => 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop',
+            ],
+
+        ]
+    ],
+
+];
+
+@endphp
+
+
+
 <!-- ══════════════════ CABANG ══════════════════ -->
+
 <section class="sec cabang-sec" id="cabang">
-  <div class="sec-inner">
-    <div class="centered">
-      <div class="sec-tag">Hadir di Seluruh Indonesia</div>
-      <h2 class="sec-h">Cabang SCI <em>Seluruh Indonesia</em></h2>
-      <p class="sec-p" style="color:var(--muted)">Dengan 150+ cabang di berbagai kota, SCI selalu dekat dengan Anda dan keluarga.</p>
-    </div>
 
-    <div class="cabang-grid reveal" id="cabangGrid">
+    <div class="sec-inner">
 
-      <!-- ── SUMATERA ── -->
-      <div class="cabang-region-label">🗺 Sumatera</div>
+        <div class="centered">
 
-      <div class="cabang-card">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Medan" loading="lazy"></div>
-        <div class="cabang-info"><h3>Medan</h3><p>Jasa Les Privat Medan</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1564596823821-79b335a76a82?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Banda Aceh" loading="lazy"></div>
-        <div class="cabang-info"><h3>Banda Aceh</h3><p>Jasa Les Privat Banda Aceh</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Binjai" loading="lazy"></div>
-        <div class="cabang-info"><h3>Binjai</h3><p>Jasa Les Privat Binjai</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Pematangsiantar" loading="lazy"></div>
-        <div class="cabang-info"><h3>Pematangsiantar</h3><p>Jasa Les Privat Pematangsiantar</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Pekanbaru" loading="lazy"></div>
-        <div class="cabang-info"><h3>Pekanbaru</h3><p>Jasa Les Privat Pekanbaru</p><a href="lesprivatpekanbaru"><button class="cabang-btn">Lihat Detail</button></a></div>
-      </div>
-      <div class="cabang-card">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Dumai" loading="lazy"></div>
-        <div class="cabang-info"><h3>Dumai</h3><p>Jasa Les Privat Dumai</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+            <div class="sec-tag">
+                Hadir di Seluruh Indonesia
+            </div>
 
-      <!-- Hidden Sumatera -->
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1564596823821-79b335a76a82?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Batam" loading="lazy"></div>
-        <div class="cabang-info"><h3>Batam</h3><p>Jasa Les Privat Batam</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Tanjung Pinang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Tanjung Pinang</h3><p>Jasa Les Privat Tanjung Pinang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Padang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Padang</h3><p>Jasa Les Privat Padang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jambi" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jambi</h3><p>Jasa Les Privat Jambi</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Bengkulu" loading="lazy"></div>
-        <div class="cabang-info"><h3>Bengkulu</h3><p>Jasa Les Privat Bengkulu</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Palembang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Palembang</h3><p>Jasa Les Privat Palembang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Lubuklinggau" loading="lazy"></div>
-        <div class="cabang-info"><h3>Lubuklinggau</h3><p>Jasa Les Privat Lubuklinggau</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Bandar Lampung" loading="lazy"></div>
-        <div class="cabang-info"><h3>Bandar Lampung</h3><p>Jasa Les Privat Bandar Lampung</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+            <h2 class="sec-h">
+                Cabang SCI <em>Seluruh Indonesia</em>
+            </h2>
 
-      <!-- ── JABODETABEK ── -->
-      <div class="cabang-region-label cabang-hidden">🏙 Jabodetabek</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jakarta" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jakarta</h3><p>Jasa Les Privat Jakarta</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jakarta Selatan" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jakarta Selatan</h3><p>Jasa Les Privat Jakarta Selatan</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jakarta Timur" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jakarta Timur</h3><p>Jasa Les Privat Jakarta Timur</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jakarta Barat" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jakarta Barat</h3><p>Jasa Les Privat Jakarta Barat</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jakarta Utara" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jakarta Utara</h3><p>Jasa Les Privat Jakarta Utara</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jakarta Pusat" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jakarta Pusat</h3><p>Jasa Les Privat Jakarta Pusat</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Bogor" loading="lazy"></div>
-        <div class="cabang-info"><h3>Bogor</h3><p>Jasa Les Privat Bogor</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Depok" loading="lazy"></div>
-        <div class="cabang-info"><h3>Depok</h3><p>Jasa Les Privat Depok</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Tangerang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Tangerang</h3><p>Jasa Les Privat Tangerang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Tangerang Selatan" loading="lazy"></div>
-        <div class="cabang-info"><h3>Tangerang Selatan</h3><p>Jasa Les Privat Tangerang Selatan</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Bekasi" loading="lazy"></div>
-        <div class="cabang-info"><h3>Bekasi</h3><p>Jasa Les Privat Bekasi</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+            <p class="sec-p" style="color:var(--muted)">
+                Dengan 150+ cabang di berbagai kota,
+                SCI selalu dekat dengan Anda dan keluarga.
+            </p>
 
-      <!-- ── JAWA BARAT ── -->
-      <div class="cabang-region-label cabang-hidden">🏔 Jawa Barat</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Bandung" loading="lazy"></div>
-        <div class="cabang-info"><h3>Bandung</h3><p>Jasa Les Privat Bandung</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Cimahi" loading="lazy"></div>
-        <div class="cabang-info"><h3>Cimahi</h3><p>Jasa Les Privat Cimahi</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Tasikmalaya" loading="lazy"></div>
-        <div class="cabang-info"><h3>Tasikmalaya</h3><p>Jasa Les Privat Tasikmalaya</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Cirebon" loading="lazy"></div>
-        <div class="cabang-info"><h3>Cirebon</h3><p>Jasa Les Privat Cirebon</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Sukabumi" loading="lazy"></div>
-        <div class="cabang-info"><h3>Sukabumi</h3><p>Jasa Les Privat Sukabumi</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Garut" loading="lazy"></div>
-        <div class="cabang-info"><h3>Garut</h3><p>Jasa Les Privat Garut</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Karawang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Karawang</h3><p>Jasa Les Privat Karawang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Purwakarta" loading="lazy"></div>
-        <div class="cabang-info"><h3>Purwakarta</h3><p>Jasa Les Privat Purwakarta</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+        </div>
 
-      <!-- ── JAWA TENGAH & DIY ── -->
-      <div class="cabang-region-label cabang-hidden">🏯 Jawa Tengah &amp; DIY</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Semarang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Semarang</h3><p>Jasa Les Privat Semarang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Solo" loading="lazy"></div>
-        <div class="cabang-info"><h3>Solo / Surakarta</h3><p>Jasa Les Privat Solo</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Yogyakarta" loading="lazy"></div>
-        <div class="cabang-info"><h3>Yogyakarta</h3><p>Jasa Les Privat Yogyakarta</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Magelang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Magelang</h3><p>Jasa Les Privat Magelang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Purwokerto" loading="lazy"></div>
-        <div class="cabang-info"><h3>Purwokerto</h3><p>Jasa Les Privat Purwokerto</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Tegal" loading="lazy"></div>
-        <div class="cabang-info"><h3>Tegal</h3><p>Jasa Les Privat Tegal</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Kudus" loading="lazy"></div>
-        <div class="cabang-info"><h3>Kudus</h3><p>Jasa Les Privat Kudus</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Pekalongan" loading="lazy"></div>
-        <div class="cabang-info"><h3>Pekalongan</h3><p>Jasa Les Privat Pekalongan</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
 
-      <!-- ── JAWA TIMUR ── -->
-      <div class="cabang-region-label cabang-hidden">🌊 Jawa Timur</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1556001934-b7f70a99c11c?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Surabaya" loading="lazy"></div>
-        <div class="cabang-info"><h3>Surabaya</h3><p>Jasa Les Privat Surabaya</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Malang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Malang</h3><p>Jasa Les Privat Malang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Kediri" loading="lazy"></div>
-        <div class="cabang-info"><h3>Kediri</h3><p>Jasa Les Privat Kediri</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Madiun" loading="lazy"></div>
-        <div class="cabang-info"><h3>Madiun</h3><p>Jasa Les Privat Madiun</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jember" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jember</h3><p>Jasa Les Privat Jember</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Banyuwangi" loading="lazy"></div>
-        <div class="cabang-info"><h3>Banyuwangi</h3><p>Jasa Les Privat Banyuwangi</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Sidoarjo" loading="lazy"></div>
-        <div class="cabang-info"><h3>Sidoarjo</h3><p>Jasa Les Privat Sidoarjo</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Gresik" loading="lazy"></div>
-        <div class="cabang-info"><h3>Gresik</h3><p>Jasa Les Privat Gresik</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Mojokerto" loading="lazy"></div>
-        <div class="cabang-info"><h3>Mojokerto</h3><p>Jasa Les Privat Mojokerto</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+        <div class="cabang-grid reveal" id="cabangGrid">
 
-      <!-- ── BALI & NUSA TENGGARA ── -->
-      <div class="cabang-region-label cabang-hidden">🌺 Bali &amp; Nusa Tenggara</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1598257007024-8c61c7e2c72f?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Denpasar" loading="lazy"></div>
-        <div class="cabang-info"><h3>Denpasar</h3><p>Jasa Les Privat Denpasar</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Singaraja" loading="lazy"></div>
-        <div class="cabang-info"><h3>Singaraja</h3><p>Jasa Les Privat Singaraja</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Mataram" loading="lazy"></div>
-        <div class="cabang-info"><h3>Mataram</h3><p>Jasa Les Privat Mataram</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Kupang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Kupang</h3><p>Jasa Les Privat Kupang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+            @foreach($cabangIndonesia as $pulau)
 
-      <!-- ── KALIMANTAN ── -->
-      <div class="cabang-region-label cabang-hidden">🌿 Kalimantan</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Pontianak" loading="lazy"></div>
-        <div class="cabang-info"><h3>Pontianak</h3><p>Jasa Les Privat Pontianak</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Singkawang" loading="lazy"></div>
-        <div class="cabang-info"><h3>Singkawang</h3><p>Jasa Les Privat Singkawang</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Palangkaraya" loading="lazy"></div>
-        <div class="cabang-info"><h3>Palangkaraya</h3><p>Jasa Les Privat Palangkaraya</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Banjarmasin" loading="lazy"></div>
-        <div class="cabang-info"><h3>Banjarmasin</h3><p>Jasa Les Privat Banjarmasin</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Samarinda" loading="lazy"></div>
-        <div class="cabang-info"><h3>Samarinda</h3><p>Jasa Les Privat Samarinda</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Balikpapan" loading="lazy"></div>
-        <div class="cabang-info"><h3>Balikpapan</h3><p>Jasa Les Privat Balikpapan</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Tarakan" loading="lazy"></div>
-        <div class="cabang-info"><h3>Tarakan</h3><p>Jasa Les Privat Tarakan</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Nusantara" loading="lazy"></div>
-        <div class="cabang-info"><h3>Nusantara</h3><p>Jasa Les Privat Nusantara (IKN)</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+                <div class="cabang-region-label">
+                    {{ $pulau['region'] }}
+                </div>
 
-      <!-- ── SULAWESI ── -->
-      <div class="cabang-region-label cabang-hidden">🌴 Sulawesi</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1598257007024-8c61c7e2c72f?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Makassar" loading="lazy"></div>
-        <div class="cabang-info"><h3>Makassar</h3><p>Jasa Les Privat Makassar</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Manado" loading="lazy"></div>
-        <div class="cabang-info"><h3>Manado</h3><p>Jasa Les Privat Manado</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Palu" loading="lazy"></div>
-        <div class="cabang-info"><h3>Palu</h3><p>Jasa Les Privat Palu</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Kendari" loading="lazy"></div>
-        <div class="cabang-info"><h3>Kendari</h3><p>Jasa Les Privat Kendari</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Gorontalo" loading="lazy"></div>
-        <div class="cabang-info"><h3>Gorontalo</h3><p>Jasa Les Privat Gorontalo</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Parepare" loading="lazy"></div>
-        <div class="cabang-info"><h3>Parepare</h3><p>Jasa Les Privat Parepare</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+                @foreach($pulau['items'] as $item)
 
-      <!-- ── MALUKU & PAPUA ── -->
-      <div class="cabang-region-label cabang-hidden">🏝 Maluku &amp; Papua</div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Ambon" loading="lazy"></div>
-        <div class="cabang-info"><h3>Ambon</h3><p>Jasa Les Privat Ambon</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Ternate" loading="lazy"></div>
-        <div class="cabang-info"><h3>Ternate</h3><p>Jasa Les Privat Ternate</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Sorong" loading="lazy"></div>
-        <div class="cabang-info"><h3>Sorong</h3><p>Jasa Les Privat Sorong</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1529016977882-5017d69f43da?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Jayapura" loading="lazy"></div>
-        <div class="cabang-info"><h3>Jayapura</h3><p>Jasa Les Privat Jayapura</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
-      <div class="cabang-card cabang-hidden">
-        <div class="cabang-img-wrap"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" class="cabang-img" alt="Timika" loading="lazy"></div>
-        <div class="cabang-info"><h3>Timika</h3><p>Jasa Les Privat Timika</p><button class="cabang-btn">Lihat Detail</button></div>
-      </div>
+                    <a
+                        href="{{ url('/cabang/' . $item['slug']) }}"
+                        class="cabang-card"
+                    >
+
+                        <div class="cabang-img-wrap">
+
+                            <img
+                                src="{{ $item['gambar'] }}"
+                                class="cabang-img"
+                                alt="{{ $item['nama'] }}"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="cabang-info">
+
+                            <h3>
+                                {{ $item['nama'] }}
+                            </h3>
+
+                            <p>
+                                Jasa Les Privat
+                                {{ $item['nama'] }}
+                            </p>
+
+                            <button class="cabang-btn">
+                                Lihat Detail
+                            </button>
+
+                        </div>
+
+                    </a>
+
+                @endforeach
+
+            @endforeach
+
+        </div>
 
     </div>
 
-    <div class="cabang-toggle-wrap">
-      <button class="cabang-toggle-btn" id="cabangToggleBtn" onclick="toggleCabang()">
-        <span id="cabangToggleIcon">🗺</span>
-        <span id="cabangToggleText">Tampilkan Semua Kota (60+ Kota)</span>
-      </button>
-    </div>
-
-  </div>
 </section>
-
 <!-- ══════════════════ FOOTER ══════════════════ -->
 <footer style="color:white;">
   <div class="footer-inner">
