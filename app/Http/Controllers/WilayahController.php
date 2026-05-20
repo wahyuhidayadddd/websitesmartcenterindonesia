@@ -15,7 +15,7 @@ class WilayahController extends Controller
 
         $data = include resource_path('data/indonesia.php');
 
-        $current = $data;
+        $currentItems = $data;
 
         $slugs = array_filter([
             $provinsi,
@@ -30,9 +30,9 @@ class WilayahController extends Controller
 
             $found = null;
 
-            foreach ($current as $item) {
+            foreach ($currentItems as $item) {
 
-                if (($item['slug'] ?? null) == $slug) {
+                if (($item['slug'] ?? null) === $slug) {
 
                     $found = $item;
                     break;
@@ -43,13 +43,15 @@ class WilayahController extends Controller
                 abort(404);
             }
 
-            $current = $found['children'] ?? [];
             $last = $found;
+
+            $currentItems = $found['children'] ?? [];
         }
 
         return view('cabang.wilayah', [
             'title' => $last['nama'] ?? 'Indonesia',
-            'items' => $current
+            'current' => $last,
+            'items' => $currentItems
         ]);
     }
 }

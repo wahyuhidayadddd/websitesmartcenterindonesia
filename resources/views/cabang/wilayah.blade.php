@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jasa Les Privat Riau Terbaik #1 — Smart Center Indonesia</title>
-<meta name="description" content="Les privat terbaik di Riau. Bimbel home visit, online, offline untuk SD, SMP, SMA, mahasiswa & umum. Tutor bersertifikat, harga terjangkau. Hubungi sekarang!">
-<meta name="keywords" content="les privat Riau, bimbel Riau, guru les Riau, kursus Riau, les matematika Riau, les bahasa inggris Riau">
+<title>Jasa Les Privat {{ $current['nama'] ?? 'Indonesia' }} Terbaik #1 — Smart Center Indonesia</title>
+<meta name="description" content="Les privat terbaik di {{ $current['nama'] ?? 'Indonesia' }}. Bimbel home visit, online, offline untuk SD, SMP, SMA, mahasiswa & umum. Tutor bersertifikat, harga terjangkau. Hubungi sekarang!">
+<meta name="keywords" content="les privat {{ $current['nama'] ?? 'Indonesia' }}, bimbel {{ $current['nama'] ?? 'Indonesia' }}, guru les {{ $current['nama'] ?? 'Indonesia' }}, kursus {{ $current['nama'] ?? 'Indonesia' }}, les matematika {{ $current['nama'] ?? 'Indonesia' }}, les bahasa inggris {{ $current['nama'] ?? 'Indonesia' }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -285,12 +285,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
   <div class="modal-box">
     <span class="modal-ico">🎉</span>
     <h3>Permintaan Terkirim!</h3>
-    <p>Terima kasih! Tim SCI Riau akan menghubungi Anda segera melalui WhatsApp dalam 1 jam.</p>
+    <p>Terima kasih! Tim SCI {{ $current['nama'] ?? 'Indonesia' }} akan menghubungi Anda segera melalui WhatsApp dalam 1 jam.</p>
     <button class="modal-btn" onclick="closeModal()">Oke, Siap!</button>
   </div>
 </div>
 
-<a id="wa-float" href="https://wa.me/6281234567890?text=Halo%20SCI!%20Saya%20tertarik%20dengan%20les%20privat%20di%20Riau." target="_blank" rel="noopener">
+<a id="wa-float" href="https://wa.me/6285333399210?text=Halo%20SCI!%20Saya%20tertarik%20dengan%20les%20privat%20di%20{{ $current['nama'] ?? 'Indonesia' }}." target="_blank" rel="noopener">
   <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span>Daftar Sekarang</span>
 </a>
@@ -299,12 +299,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
 <div class="promo-bar">
   <div class="promo-track">
     <span class="promo-item">🎉 Gratis Konsultasi Pertama <span class="sep">|</span></span>
-    <span class="promo-item">🏆 #1 Les Privat Terbaik di Riau <span class="sep">|</span></span>
+    <span class="promo-item">🏆 #1 Les Privat Terbaik di {{ $current['nama'] ?? 'Indonesia' }} <span class="sep">|</span></span>
     <span class="promo-item">📚 Mulai belajar dari Rp 50.000/sesi <span class="sep">|</span></span>
     <span class="promo-item">🌟 Garansi nilai naik atau sesi gratis! <span class="sep">|</span></span>
     <span class="promo-item">💻 Tersedia Home Visit, Online & Offline <span class="sep">|</span></span>
     <span class="promo-item">🎉 Gratis Konsultasi Pertama <span class="sep">|</span></span>
-    <span class="promo-item">🏆 #1 Les Privat Terbaik di Riau <span class="sep">|</span></span>
+    <span class="promo-item">🏆 #1 Les Privat Terbaik di {{ $current['nama'] ?? 'Indonesia' }} <span class="sep">|</span></span>
     <span class="promo-item">📚 Mulai belajar dari Rp 50.000/sesi <span class="sep">|</span></span>
     <span class="promo-item">🌟 Garansi nilai naik atau sesi gratis! <span class="sep">|</span></span>
     <span class="promo-item">💻 Tersedia Home Visit, Online & Offline <span class="sep">|</span></span>
@@ -315,7 +315,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
 <nav id="navbar">
   <a href="index.html" class="nav-logo">
     <div class="nav-logo-mark">SCI</div>
-    <div class="nav-logo-text"><b>Smart Center Indonesia</b><span>Les Privat Riau</span></div>
+    <div class="nav-logo-text"><b>Smart Center Indonesia</b><span>
+                Les Privat {{ $current['nama'] ?? 'Indonesia' }}
+            </span></div>
   </a>
   <div class="nav-links">
     <a href="#why">Keunggulan</a>
@@ -331,161 +333,914 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80&auto=format&fit=crop" alt="Les Privat Riau"></div>
-  <div class="hero-inner">
-    <div class="hero-content">
-      <div class="breadcrumb">
-        <a href="index.html">Beranda</a><span>›</span>
-        <a href="cabang-indonesia.html">Cabang</a><span>›</span>
-        <span style="color:rgba(255,255,255,.7);font-weight:700">Riau</span>
-      </div>
-      <div class="hero-eyebrow"><span class="eyebrow-dot"></span>#1 Jasa Les Privat Riau Terpercaya</div>
-      <h1>Les Privat <em>Terbaik</em><br>di Riau</h1>
-      <p class="hero-desc">Smart Center Indonesia hadir di Riau dengan 85+ tutor bersertifikat. Layanan home visit, online, dan offline untuk semua jenjang dari TK hingga umum.</p>
-      <div class="hero-btns">
-        <a href="https://wa.me/6281234567890?text=Halo%20SCI%20Riau!%20Saya%20ingin%20daftar%20les%20privat." class="btn-primary" target="_blank">💬 Daftar via WhatsApp</a>
-        <a href="#harga" class="btn-outline">Lihat Harga →</a>
-      </div>
-      <div class="hero-badges">
-        <div class="h-badge"><span>⭐</span><div class="h-badge-text"><b>Rating 4.8/5.0</b><small>1.400+ ulasan siswa</small></div></div>
-        <div class="h-badge"><span>🎓</span><div class="h-badge-text"><b>85+ Tutor</b><small>Bersertifikat resmi</small></div></div>
-        <div class="h-badge"><span>🏠</span><div class="h-badge-text"><b>Home Visit</b><small>Ke seluruh Riau</small></div></div>
-      </div>
+
+    <div class="hero-bg">
+
+        <img
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80&auto=format&fit=crop"
+            alt="Les Privat {{ $current['nama'] ?? 'Indonesia' }}"
+        >
+
     </div>
-    <!-- Form Card -->
-    <div>
-      <div class="hero-form-card">
-        <div class="hfc-title">📋 Daftar Konsultasi Gratis</div>
-        <div class="hfc-sub">Isi form & tim kami hubungi dalam 1 jam</div>
-        <div class="hfc-row">
-          <div class="hfc-group"><label class="hfc-label">Nama</label><input type="text" class="hfc-input" id="hfc-nama" placeholder="Nama siswa"></div>
-          <div class="hfc-group"><label class="hfc-label">No. WA</label><input type="text" class="hfc-input" id="hfc-wa" placeholder="08xx"></div>
+
+    <div class="hero-inner">
+
+        <div class="hero-content">
+
+            <div class="breadcrumb">
+
+                <a href="/">
+                    Beranda
+                </a>
+
+                <span>›</span>
+
+                <a href="/cabang">
+                    Cabang
+                </a>
+
+                <span>›</span>
+
+                <span style="color:rgba(255,255,255,.7);font-weight:700">
+                    {{ $current['nama'] ?? 'Indonesia' }}
+                </span>
+
+            </div>
+
+            <div class="hero-eyebrow">
+
+                <span class="eyebrow-dot"></span>
+
+                #1 Jasa Les Privat
+                {{ $current['nama'] ?? 'Indonesia' }}
+                Terpercaya
+
+            </div>
+
+            <h1>
+
+                Les Privat
+                <em>Terbaik</em>
+
+                <br>
+
+                di
+                {{ $current['nama'] ?? 'Indonesia' }}
+
+            </h1>
+
+            <p class="hero-desc">
+
+                Smart Center Indonesia hadir di
+                {{ $current['nama'] ?? 'Indonesia' }}
+                dengan tutor bersertifikat.
+
+                Layanan home visit, online, dan offline
+                untuk semua jenjang dari TK hingga umum.
+
+            </p>
+
+            <div class="hero-btns">
+
+                <a
+                    href="https://wa.me/6285333399210?text=Halo%20SCI%20{{ urlencode($current['nama'] ?? 'Indonesia') }}!%20Saya%20ingin%20daftar%20les%20privat."
+                    class="btn-primary"
+                    target="_blank"
+                >
+
+                    💬 Daftar via WhatsApp
+
+                </a>
+
+                <a href="#harga" class="btn-outline">
+                    Lihat Harga →
+                </a>
+
+            </div>
+
+            <div class="hero-badges">
+
+                <div class="h-badge">
+
+                    <span>⭐</span>
+
+                    <div class="h-badge-text">
+
+                        <b>
+                            Rating 4.8/5.0
+                        </b>
+
+                        <small>
+                            1.400+ ulasan siswa
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="h-badge">
+
+                    <span>🎓</span>
+
+                    <div class="h-badge-text">
+
+                        <b>
+                            85+ Tutor
+                        </b>
+
+                        <small>
+                            Bersertifikat resmi
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="h-badge">
+
+                    <span>🏠</span>
+
+                    <div class="h-badge-text">
+
+                        <b>
+                            Home Visit
+                        </b>
+
+                        <small>
+                            Ke seluruh
+                            {{ $current['nama'] ?? 'Indonesia' }}
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="hfc-group"><label class="hfc-label">Jenjang / Kelas</label>
-          <select class="hfc-select" id="hfc-jenjang">
-            <option value="">Pilih jenjang...</option>
-            <option>TK</option><option>SD Kelas 1-3</option><option>SD Kelas 4-6</option>
-            <option>SMP Kelas 7-9</option><option>SMA Kelas 10-12</option>
-            <option>Mahasiswa</option><option>Umum / Karyawan</option>
-          </select>
+
+        <!-- FORM -->
+
+        <div>
+
+            <div class="hero-form-card">
+
+                <div class="hfc-title">
+                    📋 Daftar Konsultasi Gratis
+                </div>
+
+                <div class="hfc-sub">
+                    Isi form & tim kami hubungi dalam 1 jam
+                </div>
+
+                <div class="hfc-row">
+
+                    <div class="hfc-group">
+
+                        <label class="hfc-label">
+                            Nama
+                        </label>
+
+                        <input
+                            type="text"
+                            class="hfc-input"
+                            id="hfc-nama"
+                            placeholder="Nama siswa"
+                        >
+
+                    </div>
+
+                    <div class="hfc-group">
+
+                        <label class="hfc-label">
+                            No. WA
+                        </label>
+
+                        <input
+                            type="text"
+                            class="hfc-input"
+                            id="hfc-wa"
+                            placeholder="08xx"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="hfc-group">
+
+                    <label class="hfc-label">
+                        Jenjang / Kelas
+                    </label>
+
+                    <select class="hfc-select" id="hfc-jenjang">
+
+                        <option value="">
+                            Pilih jenjang...
+                        </option>
+
+                        <option>TK</option>
+                        <option>SD Kelas 1-3</option>
+                        <option>SD Kelas 4-6</option>
+                        <option>SMP Kelas 7-9</option>
+                        <option>SMA Kelas 10-12</option>
+                        <option>Mahasiswa</option>
+                        <option>Umum / Karyawan</option>
+
+                    </select>
+
+                </div>
+
+                <div class="hfc-group">
+
+                    <label class="hfc-label">
+                        Mata Pelajaran
+                    </label>
+
+                    <select class="hfc-select" id="hfc-mapel">
+
+                        <option value="">
+                            Pilih mata pelajaran...
+                        </option>
+
+                        <option>Matematika</option>
+                        <option>Fisika</option>
+                        <option>Kimia</option>
+                        <option>Biologi</option>
+                        <option>Bahasa Inggris</option>
+                        <option>Akuntansi</option>
+                        <option>Komputer</option>
+                        <option>Bahasa Jepang</option>
+                        <option>Bahasa Mandarin</option>
+                        <option>Lainnya</option>
+
+                    </select>
+
+                </div>
+
+                <div class="hfc-group">
+
+                    <label class="hfc-label">
+                        Metode Belajar
+                    </label>
+
+                    <select class="hfc-select" id="hfc-metode">
+
+                        <option>
+                            Home Visit (Tutor ke rumah saya)
+                        </option>
+
+                        <option>
+                            Offline (Di kantor SCI {{ $current['nama'] ?? 'Indonesia' }})
+                        </option>
+
+                        <option>
+                            Online (Zoom / Google Meet)
+                        </option>
+
+                        <option>
+                            Hybrid (Fleksibel)
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button class="btn-hfc" onclick="submitHfc()">
+
+                    🚀 Kirim & Dapatkan Konsultasi Gratis
+
+                </button>
+
+                <div class="hfc-free">
+
+                    ✅ <b>100% Gratis</b>
+                    — Tidak ada kewajiban daftar
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="hfc-group"><label class="hfc-label">Mata Pelajaran</label>
-          <select class="hfc-select" id="hfc-mapel">
-            <option value="">Pilih mata pelajaran...</option>
-            <option>Matematika</option><option>Fisika</option><option>Kimia</option>
-            <option>Biologi</option><option>Bahasa Inggris</option><option>Akuntansi</option>
-            <option>Komputer</option><option>Bahasa Jepang</option><option>Bahasa Mandarin</option><option>Lainnya</option>
-          </select>
-        </div>
-        <div class="hfc-group"><label class="hfc-label">Metode Belajar</label>
-          <select class="hfc-select" id="hfc-metode">
-            <option>Home Visit (Tutor ke rumah saya)</option>
-            <option>Offline (Di kantor SCI Riau)</option>
-            <option>Online (Zoom / Google Meet)</option>
-            <option>Hybrid (Fleksibel)</option>
-          </select>
-        </div>
-        <button class="btn-hfc" onclick="submitHfc()">🚀 Kirim & Dapatkan Konsultasi Gratis</button>
-        <div class="hfc-free">✅ <b>100% Gratis</b> — Tidak ada kewajiban daftar</div>
-      </div>
+
     </div>
-  </div>
+
 </section>
 
 <!-- WHY -->
 <section class="sec why-sec" id="why">
-  <div class="sec-inner">
-    <div class="centered">
-      <div class="sec-tag">Mengapa SCI Riau?</div>
-      <h2 class="sec-h">Dipercaya Ribuan Keluarga<br><em>di Riau</em></h2>
-      <p class="sec-p">SCI hadir di Riau sejak 2012 dengan rekam jejak nyata dalam meningkatkan prestasi siswa dari berbagai jenjang.</p>
+
+    <div class="sec-inner">
+
+        <div class="centered">
+
+            <div class="sec-tag">
+                Mengapa SCI {{ $current['nama'] ?? 'Indonesia' }}?
+            </div>
+
+            <h2 class="sec-h">
+
+                Dipercaya Ribuan Keluarga
+
+                <br>
+
+                <em>
+                    di {{ $current['nama'] ?? 'Indonesia' }}
+                </em>
+
+            </h2>
+
+            <p class="sec-p">
+
+                SCI hadir di
+                {{ $current['nama'] ?? 'Indonesia' }}
+                sejak 2012 dengan rekam jejak nyata
+                dalam meningkatkan prestasi siswa
+                dari berbagai jenjang.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid reveal">
+
+            <div class="why-card">
+
+                <div class="why-num">
+                    01
+                </div>
+
+                <span class="why-ico">
+                    👩‍🏫
+                </span>
+
+                <h3>
+                    Tutor Bersertifikat
+                </h3>
+
+                <p>
+
+                    Semua tutor SCI
+                    {{ $current['nama'] ?? 'Indonesia' }}
+                    telah melalui seleksi ketat,
+                    pelatihan intensif,
+                    dan memiliki sertifikat mengajar resmi.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-num">
+                    02
+                </div>
+
+                <span class="why-ico">
+                    🏠
+                </span>
+
+                <h3>
+                    Home Visit
+                </h3>
+
+                <p>
+
+                    Tutor datang ke rumah Anda
+                    di seluruh wilayah
+                    {{ $current['nama'] ?? 'Indonesia' }}.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-num">
+                    03
+                </div>
+
+                <span class="why-ico">
+                    📈
+                </span>
+
+                <h3>
+                    Prestasi Siswa Meningkat
+                </h3>
+
+                <p>
+
+                    Berdasarkan evaluasi internal,
+                    mayoritas siswa SCI
+                    {{ $current['nama'] ?? 'Indonesia' }}
+                    mengalami peningkatan nilai
+                    dalam beberapa bulan pertama.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-num">
+                    04
+                </div>
+
+                <span class="why-ico">
+                    ⏰
+                </span>
+
+                <h3>
+                    Jadwal Fleksibel
+                </h3>
+
+                <p>
+
+                    Belajar bisa pagi, siang,
+                    sore, ataupun malam hari
+                    sesuai kebutuhan siswa.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-num">
+                    05
+                </div>
+
+                <span class="why-ico">
+                    💰
+                </span>
+
+                <h3>
+                    Harga Transparan
+                </h3>
+
+                <p>
+
+                    Tidak ada biaya tersembunyi.
+                    Tersedia paket hemat,
+                    pembayaran bulanan,
+                    maupun per sesi belajar.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-num">
+                    06
+                </div>
+
+                <span class="why-ico">
+                    🛡️
+                </span>
+
+                <h3>
+                    Garansi Kepuasan
+                </h3>
+
+                <p>
+
+                    Tutor dapat diganti apabila
+                    kurang cocok tanpa biaya tambahan.
+
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="why-grid reveal">
-      <div class="why-card"><div class="why-num">01</div><span class="why-ico">👩‍🏫</span><h3>85+ Tutor Bersertifikat</h3><p>Semua tutor SCI Riau telah melalui seleksi ketat, pelatihan intensif, dan memiliki sertifikat mengajar resmi dari SCI.</p></div>
-      <div class="why-card"><div class="why-num">02</div><span class="why-ico">🏠</span><h3>Home Visit Se-Riau</h3><p>Tutor datang ke rumah Anda di seluruh kecamatan Riau: Tampan, Marpoyan, Bukit Raya, Payung Sekaki, dan lebih.</p></div>
-      <div class="why-card"><div class="why-num">03</div><span class="why-ico">📈</span><h3>97% Siswa Nilai Naik</h3><p>Berdasarkan data evaluasi kami, 97% siswa SCI Riau mengalami peningkatan nilai signifikan dalam 3 bulan pertama.</p></div>
-      <div class="why-card"><div class="why-num">04</div><span class="why-ico">⏰</span><h3>Jadwal Super Fleksibel</h3><p>Belajar kapan saja sesuai jadwal Anda. Pagi, siang, sore, atau malam hari — kami siap menyesuaikan.</p></div>
-      <div class="why-card"><div class="why-num">05</div><span class="why-ico">💰</span><h3>Harga Terjangkau & Transparan</h3><p>Tidak ada biaya tersembunyi. Harga jelas sejak awal, bisa bayar per sesi, per bulan, atau per paket hemat.</p></div>
-      <div class="why-card"><div class="why-num">06</div><span class="why-ico">🛡️</span><h3>Garansi Kepuasan</h3><p>Tidak puas dengan tutor pertama? Kami ganti tanpa biaya tambahan. Nilai tidak naik? Sesi tambahan GRATIS.</p></div>
-    </div>
-  </div>
+
 </section>
 
 <!-- MAPEL -->
 <section class="sec mapel-sec" id="program">
-  <div class="sec-inner">
-    <div class="centered">
-      <div class="sec-tag">Mata Pelajaran</div>
-      <h2 class="sec-h">Program Les & Kursus<br><em>di Riau</em></h2>
-      <p class="sec-p">Semua mata pelajaran dan kursus tersedia dengan tutor spesialis di bidangnya masing-masing.</p>
-    </div>
-    <div class="mapel-grid reveal">
-      <div class="mapel-card"><span class="mapel-ico">🔢</span><h3>Matematika</h3><p>SD, SMP, SMA, Kuliah. Dari aritmatika hingga kalkulus.</p><div class="mapel-tag">⚡ Terpopuler</div></div>
-      <div class="mapel-card"><span class="mapel-ico">⚡</span><h3>Fisika</h3><p>Mekanika, gelombang, listrik magnetik, termodinamika.</p><div class="mapel-tag">SMP–SMA</div></div>
-      <div class="mapel-card"><span class="mapel-ico">🧪</span><h3>Kimia</h3><p>Kimia organik, anorganik, stoikiometri, kimia analitik.</p><div class="mapel-tag">SMP–SMA</div></div>
-      <div class="mapel-card"><span class="mapel-ico">🌿</span><h3>Biologi</h3><p>Sel, genetika, ekosistem, anatomi, fisiologi manusia.</p><div class="mapel-tag">SMP–SMA</div></div>
-      <div class="mapel-card"><span class="mapel-ico">🇬🇧</span><h3>Bahasa Inggris</h3><p>Speaking, grammar, reading, TOEFL/IELTS preparation.</p><div class="mapel-tag">⚡ Terpopuler</div></div>
-      <div class="mapel-card"><span class="mapel-ico">💻</span><h3>Komputer</h3><p>MS Office, Photoshop, Canva, Programming, Web Design.</p><div class="mapel-tag">🔥 Populer</div></div>
-      <div class="mapel-card"><span class="mapel-ico">📊</span><h3>Akuntansi</h3><p>Akuntansi dasar-profesional, perpajakan, MYOB.</p><div class="mapel-tag">Umum</div></div>
-      <div class="mapel-card"><span class="mapel-ico">🇯🇵</span><h3>Bahasa Jepang</h3><p>Hiragana, katakana, kanji, JLPT N5-N1 preparation.</p><div class="mapel-tag">Semua Level</div></div>
-    </div>
-  </div>
-</section>
 
+    <div class="sec-inner">
+
+        <div class="centered">
+
+            <div class="sec-tag">
+                Mata Pelajaran
+            </div>
+
+            <h2 class="sec-h">
+
+                Program Les & Kursus
+
+                <br>
+
+                <em>
+                    di {{ $current['nama'] ?? 'Indonesia' }}
+                </em>
+
+            </h2>
+
+            <p class="sec-p">
+
+                Semua mata pelajaran dan kursus tersedia
+                dengan tutor spesialis di bidangnya masing-masing.
+
+            </p>
+
+        </div>
+
+        <div class="mapel-grid reveal">
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    🔢
+                </span>
+
+                <h3>
+                    Matematika
+                </h3>
+
+                <p>
+                    SD, SMP, SMA, Kuliah.
+                    Dari aritmatika hingga kalkulus.
+                </p>
+
+                <div class="mapel-tag">
+                    ⚡ Terpopuler
+                </div>
+
+            </div>
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    ⚡
+                </span>
+
+                <h3>
+                    Fisika
+                </h3>
+
+                <p>
+                    Mekanika, gelombang,
+                    listrik magnetik,
+                    termodinamika.
+                </p>
+
+                <div class="mapel-tag">
+                    SMP–SMA
+                </div>
+
+            </div>
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    🧪
+                </span>
+
+                <h3>
+                    Kimia
+                </h3>
+
+                <p>
+                    Kimia organik,
+                    anorganik,
+                    stoikiometri,
+                    kimia analitik.
+                </p>
+
+                <div class="mapel-tag">
+                    SMP–SMA
+                </div>
+
+            </div>
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    🌿
+                </span>
+
+                <h3>
+                    Biologi
+                </h3>
+
+                <p>
+                    Sel, genetika,
+                    ekosistem,
+                    anatomi,
+                    fisiologi manusia.
+                </p>
+
+                <div class="mapel-tag">
+                    SMP–SMA
+                </div>
+
+            </div>
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    🇬🇧
+                </span>
+
+                <h3>
+                    Bahasa Inggris
+                </h3>
+
+                <p>
+                    Speaking, grammar,
+                    reading,
+                    TOEFL/IELTS preparation.
+                </p>
+
+                <div class="mapel-tag">
+                    ⚡ Terpopuler
+                </div>
+
+            </div>
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    💻
+                </span>
+
+                <h3>
+                    Komputer
+                </h3>
+
+                <p>
+                    MS Office,
+                    Photoshop,
+                    Canva,
+                    Programming,
+                    Web Design.
+                </p>
+
+                <div class="mapel-tag">
+                    🔥 Populer
+                </div>
+
+            </div>
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    📊
+                </span>
+
+                <h3>
+                    Akuntansi
+                </h3>
+
+                <p>
+                    Akuntansi dasar-profesional,
+                    perpajakan,
+                    MYOB.
+                </p>
+
+                <div class="mapel-tag">
+                    Umum
+                </div>
+
+            </div>
+
+            <div class="mapel-card">
+
+                <span class="mapel-ico">
+                    🇯🇵
+                </span>
+
+                <h3>
+                    Bahasa Jepang
+                </h3>
+
+                <p>
+                    Hiragana,
+                    katakana,
+                    kanji,
+                    JLPT N5-N1 preparation.
+                </p>
+
+                <div class="mapel-tag">
+                    Semua Level
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <!-- LAYANAN -->
 <section class="sec layanan-sec">
-  <div class="sec-inner">
-    <div class="centered">
-      <div class="sec-tag">Metode Belajar</div>
-      <h2 class="sec-h">Pilih Cara Belajar <em>Terbaik</em></h2>
-      <p class="sec-p">Tiga metode layanan SCI Riau — pilih yang paling nyaman dan sesuai kebutuhan Anda.</p>
+
+    <div class="sec-inner">
+
+        <div class="centered">
+
+            <div class="sec-tag">
+                Metode Belajar
+            </div>
+
+            <h2 class="sec-h">
+
+                Pilih Cara Belajar
+                <em>Terbaik</em>
+
+            </h2>
+
+            <p class="sec-p">
+
+                Tiga metode layanan SCI
+                {{ $current['nama'] ?? 'Indonesia' }}
+                — pilih yang paling nyaman
+                dan sesuai kebutuhan Anda.
+
+            </p>
+
+        </div>
+
+        <div class="layanan-grid reveal">
+
+            <!-- HOME VISIT -->
+
+            <div class="layanan-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop"
+                    class="layanan-img"
+                    alt="Home Visit"
+                    loading="lazy"
+                >
+
+                <div class="layanan-body">
+
+                    <div class="layanan-tag">
+                        🏠 HOME VISIT
+                    </div>
+
+                    <h3>
+                        Les Privat ke Rumah
+                    </h3>
+
+                    <p>
+
+                        Tutor kami datang langsung
+                        ke rumah Anda di seluruh area
+                        {{ $current['nama'] ?? 'Indonesia' }}
+                        dan sekitarnya.
+
+                        Nyaman, privat,
+                        dan efisien.
+
+                    </p>
+
+                    <div class="layanan-price">
+
+                        Mulai Rp 65.000
+
+                        <span>
+                            /sesi
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ONLINE -->
+
+            <div class="layanan-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80&auto=format&fit=crop"
+                    class="layanan-img"
+                    alt="Online"
+                    loading="lazy"
+                >
+
+                <div class="layanan-body">
+
+                    <div
+                        class="layanan-tag"
+                        style="background:rgba(5,150,105,.08);color:var(--emerald);border:1px solid rgba(5,150,105,.15)"
+                    >
+
+                        💻 ONLINE
+
+                    </div>
+
+                    <h3>
+                        Les Online via Zoom/Meet
+                    </h3>
+
+                    <p>
+
+                        Belajar dari rumah via Zoom,
+                        Google Meet,
+                        atau platform pilihan Anda.
+
+                        Rekaman sesi tersedia
+                        untuk review ulang.
+
+                    </p>
+
+                    <div
+                        class="layanan-price"
+                        style="color:var(--emerald)"
+                    >
+
+                        Mulai Rp 50.000
+
+                        <span>
+                            /sesi
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- OFFLINE -->
+
+            <div class="layanan-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80&auto=format&fit=crop"
+                    class="layanan-img"
+                    alt="Offline"
+                    loading="lazy"
+                >
+
+                <div class="layanan-body">
+
+                    <div
+                        class="layanan-tag"
+                        style="background:rgba(217,119,6,.08);color:var(--gold);border:1px solid rgba(217,119,6,.15)"
+                    >
+
+                        🏫 OFFLINE
+
+                    </div>
+
+                    <h3>
+                        Belajar di Kantor SCI
+                    </h3>
+
+                    <p>
+
+                        Datang ke kantor SCI
+                        {{ $current['nama'] ?? 'Indonesia' }}
+                        dan nikmati fasilitas belajar modern,
+                        AC, WiFi cepat,
+                        dan perpustakaan materi eksklusif.
+
+                    </p>
+
+                    <div
+                        class="layanan-price"
+                        style="color:var(--gold)"
+                    >
+
+                        Mulai Rp 55.000
+
+                        <span>
+                            /sesi
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="layanan-grid reveal">
-      <div class="layanan-card">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" class="layanan-img" alt="Home Visit" loading="lazy">
-        <div class="layanan-body">
-          <div class="layanan-tag">🏠 HOME VISIT</div>
-          <h3>Les Privat ke Rumah</h3>
-          <p>Tutor kami datang langsung ke rumah Anda di seluruh area Riau dan sekitarnya. Nyaman, privat, dan efisien!</p>
-          <div class="layanan-price">Mulai Rp 65.000<span>/sesi</span></div>
-        </div>
-      </div>
-      <div class="layanan-card">
-        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80&auto=format&fit=crop" class="layanan-img" alt="Online" loading="lazy">
-        <div class="layanan-body">
-          <div class="layanan-tag" style="background:rgba(5,150,105,.08);color:var(--emerald);border:1px solid rgba(5,150,105,.15)">💻 ONLINE</div>
-          <h3>Les Online via Zoom/Meet</h3>
-          <p>Belajar dari rumah via Zoom, Google Meet, atau platform pilihan Anda. Rekaman sesi tersedia untuk review ulang.</p>
-          <div class="layanan-price" style="color:var(--emerald)">Mulai Rp 50.000<span>/sesi</span></div>
-        </div>
-      </div>
-      <div class="layanan-card">
-        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80&auto=format&fit=crop" class="layanan-img" alt="Offline" loading="lazy">
-        <div class="layanan-body">
-          <div class="layanan-tag" style="background:rgba(217,119,6,.08);color:var(--gold);border:1px solid rgba(217,119,6,.15)">🏫 OFFLINE</div>
-          <h3>Belajar di Kantor SCI</h3>
-          <p>Datang ke kantor SCI Riau dan nikmati fasilitas belajar modern, AC, WiFi cepat, dan perpustakaan materi eksklusif.</p>
-          <div class="layanan-price" style="color:var(--gold)">Mulai Rp 55.000<span>/sesi</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </section>
 
 <!-- LOKASI -->
 <section class="sec lokasi-sec" id="lokasi">
   <div class="sec-inner">
     <div class="sec-tag">Lokasi Kami</div>
-    <h2 class="sec-h">Kantor SCI <em>Riau</em></h2>
+    <h2 class="sec-h">Kantor SCI <em>{{ $current['nama'] ?? 'Indonesia' }}</em></h2>
     <div class="lokasi-grid reveal">
       <div>
         <div class="lokasi-info">
           <h3>Informasi Lokasi & Kontak</h3>
           <div class="lokasi-detail">
-            <div class="lokasi-row"><div class="lokasi-ico">📍</div><div class="lokasi-text"><b>Alamat Kantor</b><span>Jl. Sudirman No.88, Kel. Tangkerang Barat,<br>Kec. Marpoyan Damai, Riau 28127</span></div></div>
-            <div class="lokasi-row"><div class="lokasi-ico">📞</div><div class="lokasi-text"><b>Nomor Telepon & WhatsApp</b><span>+62 811-765-0002 (Admin Riau)</span></div></div>
+            <div class="lokasi-row"><div class="lokasi-ico">📞</div><div class="lokasi-text"><b>Nomor Telepon & WhatsApp</b><span>+62 811-765-0002 (Admin {{ $current['nama'] ?? 'Indonesia' }})</span></div></div>
             <div class="lokasi-row"><div class="lokasi-ico">🕐</div><div class="lokasi-text"><b>Jam Operasional</b><span>Senin – Sabtu: 08.00 – 20.00 WIB<br>Minggu: 09.00 – 16.00 WIB</span></div></div>
-            <div class="lokasi-row"><div class="lokasi-ico">📧</div><div class="lokasi-text"><b>Email</b><span>smartcenterpekanbaru@gmail.com</span></div></div>
+            <div class="lokasi-row"><div class="lokasi-ico">📧</div><div class="lokasi-text"><b>Email</b><span>smartcenterindonesia@gmail.com</span></div></div>
           </div>
           <div class="sec-tag">Area Layanan Home Visit</div>
 <div class="area-list">
@@ -517,7 +1272,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
   <div class="sec-inner">
     <div class="centered">
       <div class="sec-tag">Biaya & Paket</div>
-      <h2 class="sec-h">Harga Les Privat <em>Riau</em></h2>
+      <h2 class="sec-h">Harga Les Privat <em>{{ $current['nama'] ?? 'Indonesia' }}</em></h2>
       <p class="sec-p">Harga transparan, tanpa biaya tersembunyi. Pilih paket yang sesuai dengan kebutuhan dan budget Anda.</p>
     </div>
     <div class="harga-grid reveal">
@@ -570,88 +1325,436 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
       </div>
     </div>
     <div style="text-align:center;margin-top:28px;padding:16px;background:rgba(109,40,217,.06);border-radius:14px;border:1px solid rgba(109,40,217,.12);max-width:600px;margin-left:auto;margin-right:auto">
-      <p style="font-size:14px;color:var(--muted);font-weight:600">💡 <b style="color:var(--ink)">Diskon paket:</b> Beli 8 sesi gratis 2 sesi • Beli 12 sesi gratis 4 sesi • <a href="https://wa.me/6281234567890" style="color:var(--violet);font-weight:800">Hubungi kami</a> untuk harga terbaik</p>
+      <p style="font-size:14px;color:var(--muted);font-weight:600">💡 <b style="color:var(--ink)">Diskon paket:</b> Beli 8 sesi gratis 2 sesi • Beli 12 sesi gratis 4 sesi • <a href="https://wa.me/6285333399210" style="color:var(--violet);font-weight:800">Hubungi kami</a> untuk harga terbaik</p>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONI -->
 <section class="sec testi-sec" id="testi">
-  <div class="sec-inner">
-    <div class="centered">
-      <div class="sec-tag">Kata Mereka</div>
-      <h2 class="sec-h">Testimoni Siswa <em>Riau</em></h2>
-      <p class="sec-p">Lebih dari 1.400 siswa Riau telah mempercayai SCI sebagai mitra belajar mereka.</p>
+
+    <div class="sec-inner">
+
+        <div class="centered">
+
+            <div class="sec-tag">
+                Kata Mereka
+            </div>
+
+            <h2 class="sec-h">
+                Testimoni Siswa
+                <em>{{ $wilayah['nama'] ?? 'Indonesia' }}</em>
+            </h2>
+
+            <p class="sec-p">
+                Lebih dari 1.400 siswa
+                {{ $wilayah['nama'] ?? 'Indonesia' }}
+                telah mempercayai SCI sebagai mitra belajar mereka.
+            </p>
+
+        </div>
+
+        <div class="testi-grid reveal">
+
+            <div class="testi-card">
+
+                <div class="tq">"</div>
+
+                <div class="testi-stars">
+                    ★★★★★
+                </div>
+
+                <p class="testi-text">
+                    SCI {{ $wilayah['nama'] ?? 'Indonesia' }} luar biasa!
+                    Nilai matematika anak saya naik dari 60 ke 90
+                    dalam 2 bulan.
+                    Tutornya sabar dan metodenya sangat efektif.
+                    Sangat rekomendasikan!
+                </p>
+
+                <div class="testi-author">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&h=100&q=80&auto=format&fit=crop&crop=face"
+                        class="testi-av"
+                        alt="Ibu Rina"
+                    >
+
+                    <div>
+
+                        <div class="testi-name">
+                            Ibu Rina Susanti
+                        </div>
+
+                        <div class="testi-role">
+                            Orang Tua Siswa SD ·
+                            {{ $wilayah['nama'] ?? 'Indonesia' }}
+                        </div>
+
+                        <div class="testi-verified">
+                            ✓ Pelanggan Terverifikasi
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testi-card">
+
+                <div class="tq">"</div>
+
+                <div class="testi-stars">
+                    ★★★★★
+                </div>
+
+                <p class="testi-text">
+                    Alhamdulillah berhasil masuk universitas impian
+                    setelah bimbel intensif di SCI
+                    {{ $wilayah['nama'] ?? 'Indonesia' }}.
+                    Materinya lengkap, tutornya profesional,
+                    dan try out-nya mirip soal asli!
+                </p>
+
+                <div class="testi-author">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&q=80&auto=format&fit=crop&crop=face"
+                        class="testi-av"
+                        alt="Fajar"
+                    >
+
+                    <div>
+
+                        <div class="testi-name">
+                            Fajar Maulana
+                        </div>
+
+                        <div class="testi-role">
+                            Siswa SMA · Persiapan UTBK
+                        </div>
+
+                        <div class="testi-verified">
+                            ✓ Alumni SCI
+                            {{ $wilayah['nama'] ?? 'Indonesia' }}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testi-card">
+
+                <div class="tq">"</div>
+
+                <div class="testi-stars">
+                    ★★★★★
+                </div>
+
+                <p class="testi-text">
+                    Kursus bahasa Inggris di SCI
+                    {{ $wilayah['nama'] ?? 'Indonesia' }}
+                    sangat membantu karir saya.
+                    Sekarang bisa presentasi dan meeting
+                    dalam bahasa Inggris dengan percaya diri.
+                </p>
+
+                <div class="testi-author">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&q=80&auto=format&fit=crop&crop=face"
+                        class="testi-av"
+                        alt="Hendra"
+                    >
+
+                    <div>
+
+                        <div class="testi-name">
+                            Hendra Wijaya
+                        </div>
+
+                        <div class="testi-role">
+                            Karyawan Swasta · Bahasa Inggris
+                        </div>
+
+                        <div class="testi-verified">
+                            ✓ Pelanggan Terverifikasi
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="testi-grid reveal">
-      <div class="testi-card">
-        <div class="tq">"</div><div class="testi-stars">★★★★★</div>
-        <p class="testi-text">SCI Riau luar biasa! Nilai matematika anak saya naik dari 60 ke 90 dalam 2 bulan. Tutornya sabar dan metodenya sangat efektif. Sangat rekomendasikan!</p>
-        <div class="testi-author"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&h=100&q=80&auto=format&fit=crop&crop=face" class="testi-av" alt="Ibu Rina"><div><div class="testi-name">Ibu Rina Susanti</div><div class="testi-role">Orang Tua Siswa SD · Tampan</div><div class="testi-verified">✓ Pelanggan Terverifikasi</div></div></div>
-      </div>
-      <div class="testi-card">
-        <div class="tq">"</div><div class="testi-stars">★★★★★</div>
-        <p class="testi-text">Alhamdulillah berhasil masuk UNRI setelah bimbel intensif UTBK di SCI Riau. Materinya lengkap, tutornya profesional, dan try out-nya mirip soal asli!</p>
-        <div class="testi-author"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&q=80&auto=format&fit=crop&crop=face" class="testi-av" alt="Fajar"><div><div class="testi-name">Fajar Maulana</div><div class="testi-role">Siswa SMA · Persiapan UTBK</div><div class="testi-verified">✓ Alumni SCI Riau</div></div></div>
-      </div>
-      <div class="testi-card">
-        <div class="tq">"</div><div class="testi-stars">★★★★★</div>
-        <p class="testi-text">Kursus bahasa Inggris di SCI Riau sangat membantu karir saya. Sekarang bisa presentasi dan meeting dalam bahasa Inggris dengan percaya diri. Best choice!</p>
-        <div class="testi-author"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&q=80&auto=format&fit=crop&crop=face" class="testi-av" alt="Hendra"><div><div class="testi-name">Hendra Wijaya</div><div class="testi-role">Karyawan Swasta · Bahasa Inggris</div><div class="testi-verified">✓ Pelanggan Terverifikasi</div></div></div>
-      </div>
-    </div>
-  </div>
+
 </section>
 
 <!-- FAQ -->
 <section class="sec faq-sec" id="faq">
-  <div class="sec-inner">
-    <div class="centered">
-      <div class="sec-tag">FAQ</div>
-      <h2 class="sec-h">Pertanyaan Umum<br><em>Les Privat Riau</em></h2>
-      <p class="sec-p" style="margin-bottom:48px">Temukan jawaban atas pertanyaan yang sering diajukan tentang layanan SCI Riau.</p>
+
+    <div class="sec-inner">
+
+        <div class="centered">
+
+            <div class="sec-tag">
+                FAQ
+            </div>
+
+            <h2 class="sec-h">
+                Pertanyaan Umum
+                <br>
+                <em>
+                    Les Privat {{ $wilayah['nama'] ?? 'Indonesia' }}
+                </em>
+            </h2>
+
+            <p class="sec-p" style="margin-bottom:48px">
+
+                Temukan jawaban atas pertanyaan yang sering diajukan
+                tentang layanan SCI
+                {{ $wilayah['nama'] ?? 'Indonesia' }}.
+
+            </p>
+
+        </div>
+
+        <div class="faq-grid">
+
+            <div class="faq-list">
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Berapa harga les privat SCI
+                        {{ $wilayah['nama'] ?? 'Indonesia' }}?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Mulai dari Rp 50.000/sesi untuk SD,
+                        Rp 70.000/sesi untuk SMP-SMA,
+                        dan Rp 80.000/sesi untuk umum/kursus.
+
+                        Tersedia diskon paket belajar bulanan.
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Apakah bisa les privat home visit di
+                        {{ $wilayah['nama'] ?? 'Indonesia' }}?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Ya, tentu! Kami melayani home visit
+                        ke seluruh area
+                        {{ $wilayah['nama'] ?? 'Indonesia' }}
+                        dan sekitarnya.
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Bagaimana cara mendaftar les privat di SCI
+                        {{ $wilayah['nama'] ?? 'Indonesia' }}?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Sangat mudah!
+                        Hubungi kami via WhatsApp,
+                        isi formulir di website,
+                        atau datang langsung ke kantor SCI
+                        {{ $wilayah['nama'] ?? 'Indonesia' }}.
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Apakah ada garansi nilai naik?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Ya! Kami membantu siswa meningkatkan
+                        prestasi belajar dengan metode belajar
+                        yang efektif dan tutor berpengalaman.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Berapa lama satu sesi les privat berlangsung?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Standar satu sesi berlangsung selama
+                        90 menit. Tersedia juga paket intensif
+                        2 hingga 3 jam per pertemuan.
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Apakah bisa berganti tutor jika tidak cocok?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Tentu! Pergantian tutor dapat dilakukan
+                        kapan saja tanpa biaya tambahan.
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Metode pembayaran apa saja yang tersedia?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Pembayaran dapat dilakukan melalui
+                        transfer bank, e-wallet, QRIS,
+                        maupun pembayaran tunai.
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+
+                    <div class="faq-q">
+
+                        Apakah SCI juga melayani kursus untuk orang dewasa?
+
+                        <span class="faq-ico">+</span>
+
+                    </div>
+
+                    <div class="faq-a">
+
+                        Ya! Kami melayani mahasiswa,
+                        karyawan, dan umum untuk berbagai kursus
+                        seperti Bahasa Inggris, Komputer,
+                        Akuntansi, dan lainnya.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="faq-grid">
-      <div class="faq-list">
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Berapa harga les privat SCI Riau? <span class="faq-ico">+</span></div><div class="faq-a">Mulai dari Rp 50.000/sesi untuk SD, Rp 70.000/sesi untuk SMP-SMA, dan Rp 80.000/sesi untuk umum/kursus. Tersedia diskon paket untuk pembelian 8 dan 12 sesi.</div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Apakah bisa les privat home visit di Riau? <span class="faq-ico">+</span></div><div class="faq-a">Ya, tentu! Kami melayani home visit ke seluruh kecamatan di Riau termasuk Tampan, Marpoyan Damai, Bukit Raya, Payung Sekaki, Rumbai, dan area Kampar sekitarnya.</div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Bagaimana cara mendaftar les privat di SCI Riau? <span class="faq-ico">+</span></div><div class="faq-a">Sangat mudah! Hubungi kami via WhatsApp di +62 811-765-0002, isi formulir di website ini, atau kunjungi kantor kami di Jl. Sudirman No.88 Riau. Konsultasi pertama GRATIS.</div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Apakah ada garansi nilai naik? <span class="faq-ico">+</span></div><div class="faq-a">Ya! Kami berkomitmen bahwa nilai siswa akan meningkat dalam 3 bulan. Jika tidak ada peningkatan, kami berikan sesi tambahan secara gratis hingga ada perkembangan nyata.</div></div>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Berapa lama satu sesi les privat berlangsung? <span class="faq-ico">+</span></div><div class="faq-a">Standar satu sesi adalah 90 menit. Untuk paket intensif tersedia sesi 2 jam atau 3 jam sesuai kebutuhan siswa.</div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Apakah bisa berganti tutor jika tidak cocok? <span class="faq-ico">+</span></div><div class="faq-a">Tentu! Kami memahami bahwa chemistry antara siswa dan tutor sangat penting. Ganti tutor bisa dilakukan kapan saja tanpa biaya tambahan apapun.</div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Metode pembayaran apa saja yang tersedia? <span class="faq-ico">+</span></div><div class="faq-a">Pembayaran bisa dilakukan via transfer bank (BCA, BRI, Mandiri, BNI), e-wallet (GoPay, OVO, Dana, Shopee Pay), QRIS, atau tunai di kantor SCI Riau.</div></div>
-        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Apakah SCI Riau juga melayani kursus untuk orang dewasa? <span class="faq-ico">+</span></div><div class="faq-a">Ya! Kami melayani mahasiswa, karyawan, dan umum untuk kursus Bahasa Inggris, Komputer, Akuntansi, Bahasa Jepang, Mandarin, dan persiapan TOEFL/IELTS/CPNS.</div></div>
-      </div>
-    </div>
-  </div>
+
 </section>
 
 <!-- CTA BOTTOM -->
 <section class="cta-sec" id="cta">
   <div class="cta-inner">
-    <h2>Siap Mulai Belajar<br><em>di Riau?</em></h2>
-    <p>Bergabung dengan 1.400+ siswa SCI Riau yang telah merasakan manfaatnya. Konsultasi gratis — tanpa kewajiban daftar.</p>
+
+    <h2>
+      Siap Mulai Belajar<br>
+      <em>{{ $current['nama'] ?? 'Indonesia' }}?</em>
+    </h2>
+
+    <p>
+      Bergabung dengan 1.400+ siswa SCI {{ $current['nama'] ?? 'Indonesia' }}
+      yang telah merasakan manfaatnya. Konsultasi gratis — tanpa kewajiban daftar.
+    </p>
+
     <div class="cta-btns">
-      <button class="cta-btn-wa" onclick="window.open('https://wa.me/6281234567890?text=Halo%20SCI%20Riau!%20Saya%20ingin%20konsultasi%20gratis%20untuk%20les%20privat.','_blank')">
-        <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+      <button 
+        class="cta-btn-wa"
+        onclick="waKonsultasi()"
+      >
+        <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+
         💬 Konsultasi Gratis via WA
       </button>
-      <button class="cta-btn-form" onclick="document.querySelector('.hero-form-card')?.scrollIntoView({behavior:'smooth'})||window.scrollTo(0,0)">
+
+      <button 
+        class="cta-btn-form"
+        onclick="document.querySelector('.hero-form-card')?.scrollIntoView({behavior:'smooth'}) || window.scrollTo(0,0)"
+      >
         📋 Isi Formulir Online
       </button>
+
     </div>
   </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><div class="f-logo-mark">SCI</div><div class="f-brand-name"><b>Smart Center Indonesia</b><span>Les Privat Riau</span></div></div>
-        <p class="f-desc">Jasa les privat & bimbel terbaik di Riau. Hadir sejak 2012 dengan 85+ tutor bersertifikat, melayani seluruh area Riau dan sekitarnya.</p>
+        <div class="footer-brand"><div class="f-logo-mark">SCI</div><div class="f-brand-name"><b>Smart Center Indonesia</b><span>Les Privat {{ $current['nama'] ?? 'Indonesia' }}</span></div></div>
+        <p class="f-desc">Jasa les privat & bimbel terbaik di {{ $current['nama'] ?? 'Indonesia' }}. Hadir sejak 2012 dengan 85+ tutor bersertifikat, melayani seluruh area {{ $current['nama'] ?? 'Indonesia' }} dan sekitarnya.</p>
         <div class="f-socials">
           <a href="#" class="f-soc">f</a>
           <a href="#" class="f-soc" style="font-size:11px">ig</a>
@@ -672,17 +1775,17 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
       <div class="footer-col">
         <h4>Layanan</h4>
         <ul>
-          <li><a href="#">Les Privat SD Riau</a></li>
-          <li><a href="#">Les Privat SMP Riau</a></li>
-          <li><a href="#">Les Privat SMA Riau</a></li>
-          <li><a href="#">Kursus Bahasa Riau</a></li>
-          <li><a href="#">Kursus Komputer Riau</a></li>
+          <li><a href="#">Les Privat SD {{ $current['nama'] ?? 'Indonesia' }}</a></li>
+          <li><a href="#">Les Privat SMP {{ $current['nama'] ?? 'Indonesia' }}</a></li>
+          <li><a href="#">Les Privat SMA {{ $current['nama'] ?? 'Indonesia' }}</a></li>
+          <li><a href="#">Kursus Bahasa {{ $current['nama'] ?? 'Indonesia' }}</a></li>
+          <li><a href="#">Kursus Komputer {{ $current['nama'] ?? 'Indonesia' }}</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Smart Center Indonesia — Cabang Riau. All Rights Reserved.</span>
-      <span>Made with ❤️ for Riau Education</span>
+      <span>© 2025 Smart Center Indonesia — Cabang {{ $current['nama'] ?? 'Indonesia' }}. All Rights Reserved.</span>
+      <span>Made with ❤️ for {{ $current['nama'] ?? 'Indonesia' }} Education</span>
     </div>
   </div>
 </footer>
@@ -695,24 +1798,71 @@ document.querySelectorAll('.reveal').forEach(r=>io.observe(r))
 function toggleFaq(el){const was=el.classList.contains('open');document.querySelectorAll('.faq-item').forEach(f=>f.classList.remove('open'));if(!was)el.classList.add('open')}
 
 function submitHfc() {
-  const n = document.getElementById('hfc-nama').value.trim()
-  const w = document.getElementById('hfc-wa').value.trim()
-  if (!n || !w) { alert('Mohon isi nama dan nomor WA.'); return }
-  const j = document.getElementById('hfc-jenjang').value
-  const m = document.getElementById('hfc-mapel').value
-  const met = document.getElementById('hfc-metode').value
-  document.getElementById('modal').classList.add('show')
-  document.getElementById('hfc-nama').value = ''
-  document.getElementById('hfc-wa').value = ''
-  document.getElementById('hfc-jenjang').value = ''
-  document.getElementById('hfc-mapel').value = ''
-}
 
+    const nama = document.getElementById('hfc-nama').value.trim();
+    const wa = document.getElementById('hfc-wa').value.trim();
+
+    if (!nama || !wa) {
+        alert('Mohon isi nama dan nomor WA.');
+        return;
+    }
+
+    const jenjang = document.getElementById('hfc-jenjang').value;
+    const mapel   = document.getElementById('hfc-mapel').value;
+    const metode  = document.getElementById('hfc-metode').value;
+
+    const wilayah = @json($current['nama'] ?? 'Indonesia');
+
+    const pesan = `
+Halo SCI ${wilayah}!
+
+Saya ingin konsultasi les privat.
+
+📌 Data Siswa:
+👤 Nama: ${nama}
+📱 No WA: ${wa}
+🎓 Jenjang: ${jenjang}
+📚 Mata Pelajaran: ${mapel}
+🏠 Metode Belajar: ${metode}
+`;
+
+    window.open(
+        `https://wa.me/6285333399210?text=${encodeURIComponent(pesan)}`,
+        '_blank'
+    );
+
+    // reset form
+    document.getElementById('hfc-nama').value = '';
+    document.getElementById('hfc-wa').value = '';
+    document.getElementById('hfc-jenjang').value = '';
+    document.getElementById('hfc-mapel').value = '';
+    document.getElementById('hfc-metode').value = '';
+}
 function closeModal() { document.getElementById('modal').classList.remove('show') }
 document.getElementById('modal').addEventListener('click', function(e) { if (e.target === this) closeModal() })
 
 function waKonsul(paket) {
-  window.open(`https://wa.me/6281234567890?text=Halo%20SCI%20Riau!%20Saya%20ingin%20mendaftar%20Paket%20${encodeURIComponent(paket)}.%20Mohon%20informasinya.`, '_blank')
+    let wilayah = @json($current['nama'] ?? 'Indonesia');
+
+    let pesan = `Halo SCI ${wilayah}! Saya ingin mendaftar Paket ${paket}. Mohon informasinya.`;
+
+    window.open(
+        `https://wa.me/6285333399210?text=${encodeURIComponent(pesan)}`,
+        '_blank'
+    );
+}
+</script>
+<script>
+function waKonsultasi() {
+
+    let wilayah = @json($current['nama'] ?? 'Indonesia');
+
+    let pesan = `Halo SCI ${wilayah}! Saya ingin konsultasi gratis untuk les privat.`;
+
+    window.open(
+        `https://wa.me/6285333399210?text=${encodeURIComponent(pesan)}`,
+        '_blank'
+    );
 }
 </script>
 </body>

@@ -1315,10 +1315,8 @@ footer .f-desc{font-size:13px;line-height:1.8;margin-bottom:18px}
   </div>
 </section>
 
-
-
 <!-- ══════════════════ CABANG ══════════════════ -->
-
+<!-- ══════════════════ CABANG ══════════════════ -->
 <section class="sec cabang-sec" id="cabang">
 
     <div class="sec-inner">
@@ -1330,7 +1328,7 @@ footer .f-desc{font-size:13px;line-height:1.8;margin-bottom:18px}
             </div>
 
             <h2 class="sec-h">
-                Cabang SCI <em>Seluruh Indonesia</em>
+                Cabang SCI <em>{{ $title ?? 'Seluruh Indonesia' }}</em>
             </h2>
 
             <p class="sec-p" style="color:var(--muted)">
@@ -1340,61 +1338,127 @@ footer .f-desc{font-size:13px;line-height:1.8;margin-bottom:18px}
 
         </div>
 
-
         <div class="cabang-grid reveal" id="cabangGrid">
 
-            @foreach($cabangIndonesia as $pulau)
+            @forelse($items as $item)
 
-                <div class="cabang-region-label">
-                    {{ $pulau['region'] }}
+                <a
+                    href="{{ rtrim(request()->url(), '/') . '/' . $item['slug'] }}"
+                    class="cabang-card"
+                >
+
+                    <div class="cabang-img-wrap">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop"
+                            class="cabang-img"
+                            alt="{{ $item['nama'] }}"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="cabang-info">
+
+                        <h3>
+                            {{ $item['nama'] }}
+                        </h3>
+
+                        <p>
+                            Jasa Les Privat
+                            {{ $item['nama'] }}
+                        </p>
+
+                        <button class="cabang-btn">
+                            Lihat Detail
+                        </button>
+
+                    </div>
+
+                </a>
+
+            @empty
+
+                <div class="cabang-empty">
+
+                    <h3>
+                        Cabang Tidak Ditemukan
+                    </h3>
+
+                    <p>
+                        Data wilayah belum tersedia.
+                    </p>
+
                 </div>
 
-                @foreach($pulau['items'] as $item)
-
-                    <a
-                        href="{{ url('/cabang/' . $item['slug']) }}"
-                        class="cabang-card"
-                    >
-
-                        <div class="cabang-img-wrap">
-
-                            <img
-                                src="{{ $item['gambar'] }}"
-                                class="cabang-img"
-                                alt="{{ $item['nama'] }}"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="cabang-info">
-
-                            <h3>
-                                {{ $item['nama'] }}
-                            </h3>
-
-                            <p>
-                                Jasa Les Privat
-                                {{ $item['nama'] }}
-                            </p>
-
-                            <button class="cabang-btn">
-                                Lihat Detail
-                            </button>
-
-                        </div>
-
-                    </a>
-
-                @endforeach
-
-            @endforeach
+            @endforelse
 
         </div>
+
+        @if(count($items) > 8)
+
+            <div class="cabang-toggle-wrap">
+
+                <button
+                    class="cabang-toggle-btn"
+                    id="cabangToggleBtn"
+                    onclick="toggleCabang()"
+                >
+
+                    <span id="cabangToggleIcon">
+                        🗺
+                    </span>
+
+                    <span id="cabangToggleText">
+                        Tampilkan Semua Kota
+                    </span>
+
+                </button>
+
+            </div>
+
+        @endif
 
     </div>
 
 </section>
+
+<script>
+
+    function toggleCabang()
+    {
+        let hiddenCards =
+            document.querySelectorAll('.cabang-hidden');
+
+        let btnText =
+            document.getElementById('cabangToggleText');
+
+        let btnIcon =
+            document.getElementById('cabangToggleIcon');
+
+        hiddenCards.forEach(card => {
+            card.classList.toggle('show');
+        });
+
+        if (btnText.innerText.includes('Tampilkan')) {
+
+            btnText.innerText =
+                'Sembunyikan Kota';
+
+            btnIcon.innerText = '❌';
+
+        } else {
+
+            btnText.innerText =
+                'Tampilkan Semua Kota';
+
+            btnIcon.innerText = '🗺';
+
+        }
+    }
+
+</script>
+
 <!-- ══════════════════ FOOTER ══════════════════ -->
 <footer style="color:white;">
   <div class="footer-inner">
