@@ -1238,7 +1238,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.45);padding:clamp(40px,6vw
         <div class="lokasi-info">
           <h3>Informasi Lokasi & Kontak</h3>
           <div class="lokasi-detail">
-            <div class="lokasi-row"><div class="lokasi-ico">📞</div><div class="lokasi-text"><b>Nomor Telepon & WhatsApp</b><span>+62 811-765-0002 (Admin {{ $current['nama'] ?? 'Indonesia' }})</span></div></div>
+            <div class="lokasi-row"><div class="lokasi-ico">📞</div><div class="lokasi-text"><b>Nomor Telepon & WhatsApp</b><span>+62 853-3339-9210 (Admin {{ $current['nama'] ?? 'Indonesia' }})</span></div></div>
             <div class="lokasi-row"><div class="lokasi-ico">🕐</div><div class="lokasi-text"><b>Jam Operasional</b><span>Senin – Sabtu: 08.00 – 20.00 WIB<br>Minggu: 09.00 – 16.00 WIB</span></div></div>
             <div class="lokasi-row"><div class="lokasi-ico">📧</div><div class="lokasi-text"><b>Email</b><span>smartcenterindonesia@gmail.com</span></div></div>
           </div>
